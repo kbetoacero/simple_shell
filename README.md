@@ -1,6 +1,6 @@
 # Simple Shell
 
-A simple UNIX command interpreter in order to complete the Simple_Shell project at Holberto School
+A simple UNIX command interpreter in order to complete the Simple_Shell project at Holberton School
 
 # Requirements
 
