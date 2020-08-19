@@ -14,5 +14,5 @@
 #include <sys/stat.h>
 #define SHELL "KBS$ "
 
-void _prompt();
+void _prompt(void);
 #endif /* S_SHELL */
