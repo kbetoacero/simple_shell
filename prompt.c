@@ -10,6 +10,7 @@ void _prompt(void)
 
 	if (buffer)
 	{
-	write(STDOUT_FILENO, "$>", 2); /*printf"$ ");*/
+	write(STDOUT_FILENO, "$>", 3); /*printf"$ ");*/
 	}
+	free(buffer);
 }
