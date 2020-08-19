@@ -39,7 +39,7 @@ int main(void)
 		}
 		else
 		{
-			if (execve(rec_env(buf), cmd, NULL) == -1)
+			if (execve(buf, cmd, NULL) == -1)
 			{
 				perror("shell error");
 			}
