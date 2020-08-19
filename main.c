@@ -26,7 +26,7 @@ int main(void)
 		}
 		if (strcmp(cmd[0], "exit") == 0)
 			break;
-		
+
 		pid = fork();
 		main_chk(pid, cmd);
 	}

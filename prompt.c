@@ -1,17 +1,23 @@
 #include "s_shell.h"
 
-/**_prompt - prompt                                                                  
-                                                                                     */
+/**
+* _prompt - prompt
+* Return: void
+*/
+
 void _prompt(void)
 {
 	if (isatty(STDIN_FILENO))
 	write(STDOUT_FILENO, "$>", 3); /*printf"$ ");*/
 }
-/* main_chk - checker for main
+
+/**
+ * main_chk - checker for main
  * @pid: to check
  * @cmd: command to check
 */
-void main_chk(int pid , char **cmd)
+
+void main_chk(int pid, char **cmd)
 {
 	char *cm = NULL;
 
