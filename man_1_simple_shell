@@ -29,13 +29,13 @@ This shell will be compiled with this command line
 .B "gcc -g *.c -o hsh"
 
 .SH SYNTAX
-.I 1.	
+.I 1.
 .B $ <command>
 
-Example 
+Example
 $ ls
 
-.I 2.	
+.I 2.
 .B $ <command> <file_name>
 
 Example
