@@ -12,12 +12,7 @@
 #include <pwd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#define SHELL "KBS$ "
 
-extern char **environ;
-void _prompt(void);
-char *rec_env(char *buf);
-/*void han_cmd_func(int sig);*/
-char **splt(char *raw_cmd, char *limit);
-void main_chk(int pid, char **cmd);
-
-#endif  /* S_SHELL */
+void _prompt();
+#endif /* S_SHELL */
