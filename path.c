@@ -1,4 +1,4 @@
-#include "simple_shell.h"
+#include "s_shell.h"
 /**
  * rec_env - env
  * @buf: buffer to read
@@ -11,24 +11,25 @@ char *rec_env(char *buf)
 	char *s;
 	char *token;
 	int i = 0;
-	char* args[100];
-	char* tab[100];
+	char *args[100];
+	char *tab[100];
 
 	s = getenv("PATH");
-        token = strtok(s,":");
+	token = strtok(s, ":");
 	while (token != NULL)
 	{
 		args[i] = token;
 		i++;
-		token = strtok(NULL,":");
+		token = strtok(NULL, ":");
 	}
-        i = 0;
+	i = 0;
+
 	while (args[i])
 	{
-		str = (char*)malloc(100);
+		str = (char *)malloc(100);
 		strcat(str, args[i]);
 		strcat(str, "/");
-		strcat(str,buf);
+		strcat(str, buf);
 		tab[i] = str;
 		if (stat(tab[i], &buff) == 0)
 		{

@@ -1,4 +1,4 @@
-#include "simple_shell.h"
+#include "s_shell.h"
 /**
  * splt - split
  * @raw_cmd: to split
@@ -9,7 +9,7 @@ char **splt(char *raw_cmd, char *limit)
 {
 	char	*ptr = NULL;
 	char	**cmd = NULL;
-	size_t	idx = 0;
+	size_t	index = 0;
 
 	ptr = strtok(raw_cmd, limit);
 	cmd = malloc(1024);
@@ -20,10 +20,10 @@ char **splt(char *raw_cmd, char *limit)
 	}
 	while (ptr)
 	{
-		cmd[idx] = strdup(ptr);
+		cmd[index] = strdup(ptr);
 		ptr = strtok(NULL, limit);
-		++idx;
+		++index;
 	}
-	cmd[idx] = NULL;
+	cmd[index] = NULL;
 	return (cmd);
 }
