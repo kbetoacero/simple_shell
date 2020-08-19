@@ -14,13 +14,10 @@ int main(void)
 	{
 		_prompt();
 		if (getline(&buf, &len, stdin) == EOF)
-			{
-			if (isatty(0) == 1)
-				{
-				write(STDOUT_FILENO, "\n", 1);
-				break;
-				}
-			}
+		{
+			write(STDOUT_FILENO, "\n", 1);
+			break;
+		}
 		cmd = splt(buf, " \n\t");
 		if (cmd[0] == NULL)
 		{
@@ -29,23 +26,12 @@ int main(void)
 		}
 		if (strcmp(cmd[0], "exit") == 0)
 			break;
+		
 		pid = fork();
-		if (pid == -1)
-			perror("fork error");
-		else if (pid > 0)
-		{
-			waitpid(pid, 0, 0);
-			kill(pid, SIGTERM);
-		}
-		else
-		{
-			if (execve(buf, cmd, NULL) == -1)
-			{
-				perror("shell error");
-			}
-			exit(EXIT_FAILURE);
-			}
+		main_chk(pid, cmd);
 	}
 	fflush(stdout);
+	free(buf);
+	free(cmd);
 	return (0);
 }
