@@ -31,7 +31,7 @@ int main(int argc __attribute__((unused)), char *argv[]__attribute__((unused)),
 	{
 		if (execve(command[0], command, envp))
 		{
-			perror("execve");
+			perror("./shell");
 			exit(EXIT_FAILURE);
 		}
 	}
