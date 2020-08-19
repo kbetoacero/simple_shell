@@ -40,5 +40,4 @@ char *rec_env(char *buf)
 	free(str);
 	free(token);
 	return (NULL);
-
 }

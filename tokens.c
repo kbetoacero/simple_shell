@@ -1,8 +1,8 @@
 #include "s_shell.h"
 /**
- * splt - split
+ * splt - split in tokens
  * @raw_cmd: to split
- * @limit: where to stop
+ * @limit: limit
  * Return: cmd
 */
 char **splt(char *raw_cmd, char *limit)
@@ -16,7 +16,7 @@ char **splt(char *raw_cmd, char *limit)
 	if (!cmd)
 	{
 		perror("Error\n");
-		exit(99);
+		exit(EXIT_FAILURE);
 	}
 	while (ptr)
 	{
