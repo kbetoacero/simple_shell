@@ -15,4 +15,5 @@
 #define SHELL "KBS$ "
 
 void _prompt(void);
+int _putchar(char c);
 #endif /* S_SHELL */

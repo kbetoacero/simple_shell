@@ -48,7 +48,7 @@ int main(int argc __attribute__((unused)), char *argv[]__attribute__((unused)),
 		if (child > 0) /* Successful forks return positive process id's the parent*/
 		wait(&status);
 	}
-		putchar('\n');
+		_putchar('\n');
 		free(lineptr);
 		exit(status);
 }
