@@ -1,5 +1,10 @@
 #include "s_shell.h"
 
+/**
+* _prompt - display a $ and wait for user input
+* Return: Void
+*/
+
 
 void _prompt(void)
 {

@@ -1,5 +1,11 @@
 #include "s_shell.h"
 
+/**
+* main - entry point 
+* Return: nothing
+*/
+
+
 int main(int argc __attribute__((unused)), char *argv[]__attribute__((unused)),
 	char *envp[])
 {
