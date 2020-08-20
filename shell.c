@@ -5,6 +5,7 @@
  * A simple of shell
  * @argc: unused
  * @argv: unused
+ * @envp: array of pointers to string
  * Return: Always 0
 */
 
