@@ -1,8 +1,11 @@
 #include "s_shell.h"
 
 /**
-* main - entry point 
-* Return: nothing
+ * main - simple shell
+ * A simple of shell
+ * @argc: unused
+ * @argv: unused
+ * Return: Always 0
 */
 
 
