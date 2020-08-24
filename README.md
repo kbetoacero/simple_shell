@@ -1,7 +1,7 @@
 # Simple Shell
 
 A simple UNIX command interpreter in order to complete the Simple_Shell project at Holberton School
-[flowchart] (https://github.com/kbetoacero/simple_shell/issues/1#issue-684718567)
+(https://github.com/kbetoacero/simple_shell/issues/1#issue-684718567 "FlowChart")
 # Requirements
 
 * Allowed editors: ```vi```, ```vim```, ```emacs```
