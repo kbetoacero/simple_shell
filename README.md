@@ -1,7 +1,7 @@
 # Simple Shell
 
 A simple UNIX command interpreter in order to complete the Simple_Shell project at Holberton School
-
+[flowchart] (https://github.com/kbetoacero/simple_shell/issues/1#issue-684718567)
 # Requirements
 
 * Allowed editors: ```vi```, ```vim```, ```emacs```
@@ -17,6 +17,13 @@ A simple UNIX command interpreter in order to complete the Simple_Shell project 
 + use "exit" or "ctr + D" to close the program
 + use "cd" to navigate
 + use ls, pwd, with arguments
+
+The shell work in interactive mode:
+$ ./kbsh
+
+The shell also works in non-intercative mode:
+$ echo "/bin/ls" | ./kbsh
+
 
 ## C Functions and Syscalls Utilized
 ```
